@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Event Reservation</title>
+  <link rel="stylesheet" href="css/Style.css">
+</head>
+<body>
+
+  <form method="REQUEST" action="php/Operazioni.php">
+
+    <div class="card">
+
+      <h2> Prenotazione Eventi </h2>
+
+      <p> Nome evento:
+        <input type="text" name="name_event" maxlength="20" placeholder="Nome Evento" title="Nome Evento" autofocus required />
+      </p>
+      <p> Numero partecipanti:
+        <input type="number" name="people_event" min="1" max="100" required />
+      </p>
+      <p>
+        <input type="submit" value="Prenota" />
+      </p>
+
+    </form>
+
+    <form action="php/Visualizza.php">
+      <p>
+        <input type="submit" value="Visualizza Prenotazioni" />
+      </p>
+    </form>
+
+    <form action="php/Delete.php">
+      <p>
+        <input type="submit" value="Cancella Prenotazioni" />
+      </p>
+    </form>
+
+    <p id="footerp"> by Fontanarosa Nicolo </p>
+
+  </div>
+
+</body>
+</html>
